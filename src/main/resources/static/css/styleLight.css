@@ -1,0 +1,45 @@
+/* theme-light.css */
+
+body {
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+a {
+  pointer-events: auto !important;
+  z-index: 1;
+  position: relative;
+}
+
+nav a {
+  color: #333;
+}
+
+.logo {
+  color: #d500f9;
+}
+
+.hero-text h1 .first-name {
+  color: #7b2ff7;
+}
+
+.hero-text h1 .last-name {
+  color: #f20058;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #7b2ff7, #f20058);
+  color: white;
+  border: none;
+}
+
+.btn-cv {
+  border: 2px solid #7b2ff7;
+  color: #7b2ff7;
+  background-color: white;
+}
