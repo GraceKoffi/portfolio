@@ -18,12 +18,14 @@ public class ControllerHome {
 
     @GetMapping("/projects")
     public String projects() {
-        return "projects";
+        return "/maintenance";
+        //return "projects";
     }
 
     @GetMapping("/contact")
     public String contact() {
-        return "contact";
+        return "/maintenance";
+        //return "contact";
     }
 
     @GetMapping("/{path:[^\\.]*}")
