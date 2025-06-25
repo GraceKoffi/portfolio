@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>[[#{maintenance.name}]]</title>
+    <link rel="stylesheet" href="/css/styleMain.css">
+    <link id="themeStylesheet" rel="stylesheet" href="/css/styleLight.css">
+</head>
+<script src="/js/themeToggle.js"></script>
+<body>
+    <h1>[[#{maintenance.title}]]</h1>
+    <!-- Inclusion du header -->
+    <div th:replace="fragments/header :: header"></div>
+    <p>[[#{maintenance.sorry}]]</p>
+</body>
+</html>

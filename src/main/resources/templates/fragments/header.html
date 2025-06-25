@@ -1,0 +1,24 @@
+<!-- fragments/header.html -->
+<div th:fragment="header">
+    <nav>
+        <a th:href="@{/}">[[#{home.label}]]</a>
+        <a th:href="@{/about}">[[#{about.label}]]</a>
+        <a th:href="@{/projects}">[[#{projects.label}]]</a>
+        <a th:href="@{/contact}">[[#{contact.label}]]</a>
+    </nav>
+
+    <form method="get">
+        <select name="lang" onchange="this.form.submit()">
+            <option value="fr" th:selected="${#locale.language == 'fr'}">Français</option>
+            <option value="en" th:selected="${#locale.language == 'en'}">English</option>
+            <!-- <option value="es" th:selected="${#locale.language == 'es'}">Spanish</option> -->
+        </select>
+    </form>
+
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider round"></span>
+        </label>
+</div>
+</div>

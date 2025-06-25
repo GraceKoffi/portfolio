@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>[[#{error.name}]]</title>
+    <link rel="stylesheet" href="/css/styleMain.css">
+    <link id="themeStylesheet" rel="stylesheet" href="/css/styleLight.css">
+</head>
+<script src="/js/themeToggle.js"></script>
+<body>
+    <h1>[[#{error.title}]]</h1>
+    <!-- Inclusion du header -->
+    <div th:replace="fragments/header :: header"></div>
+    <p>[[#{error.test}]]</p>
+</body>
+</html>
